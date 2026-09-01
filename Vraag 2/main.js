@@ -1,4 +1,4 @@
-async function main() {
+export async function question2() {
     const response = await fetch('https://public-lab.nl/api/vraag/2');
     const data = await response.json();
 
@@ -16,5 +16,3 @@ async function main() {
     const result = await postResponse.json();
     console.log(`the answer is: ${result.teken}`);
 }
-
-main();
