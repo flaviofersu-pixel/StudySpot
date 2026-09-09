@@ -44,8 +44,6 @@ If every chip is off, the map shows **all** types. Several chips can be on at on
 | The detail panel    | `PlaceCard`   | Shows hours, availability, address, distance |
 
 
-
-
 ## Midium-fi - desktop
 
 ![Desktop wireframe](wireframes/MediumFidelity/MainPage-MediumFidelity.png.png)
