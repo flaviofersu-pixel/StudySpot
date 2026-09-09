@@ -1,6 +1,6 @@
-# Leerplekken
+# StudySpot
 
-Leerplekken helps people in the Netherlands find a place to study or work nearby: cafes, OBA libraries, and schools. You search and filter on a map, then open a place to see opening hours, availability, and distance.
+StudySpot helps people in the Netherlands find a place to study or work nearby: cafes, OBA libraries, and schools. You search and filter on a map, then open a place to see opening hours, availability, and distance.
 
 ## Who it is for
 

@@ -1,6 +1,6 @@
 # Architecture
 
-This is the plan for how Leerplekken will be built.
+This is the plan for how StudySpot will be built.
 
 ## Folder structure
 
@@ -8,16 +8,17 @@ When we create the Next.js app, the useful parts will look like this:
 
 ```
 website/
-  app/
-    layout.js          site shell: page title, fonts, shared wrapper
-    page.js            the main page
-  components/
-    SearchBar.js       the search input
-    FilterChips.js     Café / OBA / School buttons
-    MapView.js         the Leaflet map and pins
-    PlaceCard.js       details for the selected place
-  data/
-    places.json        the list of places (until a backend exists)
+  study-spot/
+    app/
+      layout.js          site shell: page title, fonts, shared wrapper
+      page.js            the main page
+    components/
+      SearchBar.js       the search input
+      FilterChips.js     Café / OBA / School buttons
+      MapView.js         the Leaflet map and pins
+      PlaceCard.js       details for the selected place
+    data/
+      places.json        the list of places (until a backend exists)
 ```
 
 ```
