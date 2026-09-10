@@ -11,7 +11,7 @@ Students and remote workers who want a quiet-enough spot without guessing which 
 The first version will be a **single main page**:
 
 - A search bar to look up a place by name
-- Filter for **Café**, **OBA**, and **School**
+- Filter for **Cafe**, **OBA**, and **School**
 - A map with a pin for each place
 - A detail card that appears when you click a pin (hours, availability, address, distance)
 
