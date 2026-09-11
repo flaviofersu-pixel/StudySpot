@@ -31,7 +31,7 @@ export function NavBar() {
                 </div>
 
                 <div className="flex shrink-0 items-center gap-1 sm:gap-3">
-                    {/* Only when signed in - future feat  */}
+                    {/* Only when signed in - future feat */}
                     <Link
                         href="/"
                         aria-label="Favorieten"
