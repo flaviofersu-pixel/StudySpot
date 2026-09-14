@@ -6,10 +6,11 @@ import dynamic from "next/dynamic";
 const MapViewComponent = dynamic(() => import("./components/Map/mapViewComponent"), { ssr: false });
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 bg-zinc-50 font-sans">
+    <div className="flex min-h-screen flex-col bg-zinc-50 font-sans">
       <NavbarComponent />
-      <FilterComponent />
-      <MapViewComponent />
+      <FilterComponent>
+        <MapViewComponent />
+      </FilterComponent>
     </div>
   );
 }
