@@ -21,7 +21,7 @@ export function NavbarComponent() {
                         </span>
                     </Link>
 
-                    <form className="min-w-0 flex-1 md:max-w-[28rem]" action="/" method="get">
+                    <form className="min-w-0 flex-1 md:max-w-[28rem]">
                         <input
                             type="search"
                             placeholder="Zoek op naam, adres of buurt..."
@@ -51,7 +51,7 @@ export function NavbarComponent() {
                         </svg>
                     </Link>
                     <Link
-                        href="/"
+                        href="/signup"
                         className="rounded-full bg-brand px-3 py-1.5 text-sm font-semibold text-white hover:bg-brand-dark sm:px-5 sm:py-2.5 sm:text-base"
                     >
                         Inloggen
