@@ -2,7 +2,7 @@
 import "leaflet/dist/leaflet.css"
 import { MapContainer, TileLayer } from "react-leaflet";
 
-export default function MapView() {
+export default function MapViewComponent() {
     let getUserLocation = "";
 
     return (

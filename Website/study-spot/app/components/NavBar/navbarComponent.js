@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function NavBar() {
+export function NavbarComponent() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white shadow-md">
             <div className="h-1.5 w-full bg-brand" />
