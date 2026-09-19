@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export function FilterComponent({ children }) {
+export function FilterComponent({ children, selectedTypes, onToggleType }) {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
     function handleClick() {
@@ -20,7 +20,7 @@ export function FilterComponent({ children }) {
                         Filters
                     </button>
                 </div>
-                <div className="min-w-0 flex-1">{children}</div>
+                <div className="flex min-w-0 flex-1 flex-col">{children}</div>
             </section>
         );
     }
@@ -37,33 +37,52 @@ export function FilterComponent({ children }) {
                 </button>
             </div>
             <div className="flex min-h-0 flex-1">
-                <SideBarComponent />
-                <div className="min-w-0 flex-1">{children}</div>
+                <SideBarComponent
+                    selectedTypes={selectedTypes}
+                    onToggleType={onToggleType}
+                />
+                <div className="flex min-w-0 flex-1 flex-col">{children}</div>
             </div>
         </section>
     );
 }
 
-function SideBarComponent() {
+function SideBarComponent({ selectedTypes, onToggleType }) {
     return (
         <aside className="w-56 shrink-0 overflow-y-auto border-r border-zinc-200 bg-white p-4">
             <p className="mb-2 text-xs font-semibold tracking-wide text-zinc-500">
                 TYPE
             </p>
             <label className="flex items-center gap-2 py-1.5 text-sm text-zinc-800">
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    checked={selectedTypes.includes("bibliotheek")}
+                    onChange={() => onToggleType("bibliotheek")}
+                />
                 Bibliotheek
             </label>
             <label className="flex items-center gap-2 py-1.5 text-sm text-zinc-800">
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    checked={selectedTypes.includes("cafe")}
+                    onChange={() => onToggleType("cafe")}
+                />
                 Café
             </label>
             <label className="flex items-center gap-2 py-1.5 text-sm text-zinc-800">
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    checked={selectedTypes.includes("school")}
+                    onChange={() => onToggleType("school")}
+                />
                 School
             </label>
             <label className="flex items-center gap-2 py-1.5 text-sm text-zinc-800">
-                <input type="checkbox" />
+                <input
+                    type="checkbox"
+                    checked={selectedTypes.includes("studieplek")}
+                    onChange={() => onToggleType("studieplek")}
+                />
                 Studieplek
             </label>
         </aside>
