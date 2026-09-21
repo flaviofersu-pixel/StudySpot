@@ -4,7 +4,7 @@ This is the plan for how StudySpot will be built.
 
 ## Folder structure
 
-When we create the Next.js app, the useful parts will look like this:
+When i create the Next.js app, the useful parts will look like this:
 
 ```
 website/
@@ -14,7 +14,7 @@ website/
       page.js            the main page
     components/
       SearchBar.js       the search input
-      FilterChips.js     Café / OBA / School buttons
+      FilterChips.js     Cafe / OBA / School buttons
       MapView.js         the Leaflet map and pins
       PlaceCard.js       details for the selected place
     data/
@@ -72,7 +72,7 @@ Each mockdate place in JSON will look like this:
 | `openingHours` | Shown on the card |
 | `availability` | `"quiet"`, `"busy"`, or `"unknown"` for version 1 |
 
-**Distance is not stored.** It depends on where the user is. Later we calculate it from the user’s location (or from a searched area) to the place’s `lat` / `lng`.
+**Distance is not stored.** It depends on where the user is. Later ill calculate it from the user’s location (or from a searched area) to the place’s `lat` / `lng`.
 
 ## Leaflet (later)
 
