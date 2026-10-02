@@ -87,3 +87,6 @@ Each mockdate place in JSON will look like this:
 Version 1 imports `places.json`. Later, `page.js` (or a small helper next to it) can `fetch` the same list from an API instead.
 
 Because `SearchBar`, `FilterChips`, `MapView`, and `PlaceCard` only receive data as props, they do not need to know whether that data came from a file or a server.
+
+## Testing - Finding places 
+- https://overpass-turbo.eu/ 

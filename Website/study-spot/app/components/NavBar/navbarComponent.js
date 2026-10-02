@@ -33,7 +33,7 @@ export function NavbarComponent() {
                 <div className="flex shrink-0 items-center gap-1 sm:gap-3">
                     {/* Only when signed in - future feat */}
                     <Link
-                        href="/"
+                        href="/favorite"
                         aria-label="Favorieten"
                         title="Favorieten"
                         className="flex h-9 w-9 items-center justify-center rounded-full hover:bg-orange-50 sm:h-11 sm:w-11"
