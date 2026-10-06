@@ -1,12 +1,12 @@
 "use client";
 import { useState } from "react";
-import { FilterComponent } from "./components/filter/filterComponent";
-import { NavbarComponent } from "./components/navbar/navbarComponent";
+import { FilterComponent } from "./components/Filter/filterComponent";
+import { NavbarComponent } from "./components/NavBar/navbarComponent";
 import dynamic from "next/dynamic";
-import { NearPlacesCards } from "./components/places/nearPlaces";
-import rawData from "./components/places/hardCodedData";
+import { NearPlacesCards } from "./components/Places/nearPlaces";
+import rawData from "./components/Places/hardCodedData";
 
-const MapViewComponent = dynamic(() => import("./components/map/mapViewComponent"), { ssr: false });
+const MapViewComponent = dynamic(() => import("./components/Map/mapViewComponent"), { ssr: false });
 
 export default function Home() {
   const [selectedTypes, setSelectedTypes] = useState([]);
