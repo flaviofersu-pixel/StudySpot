@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function NavbarComponent() {
     return (
-        <header className="sticky top-0 z-50 w-full border-b border-zinc-200 bg-white shadow-md">
+        <header className="sticky top-0 z-50 w-full shrink-0 border-b border-zinc-200 bg-white shadow-md">
             <div className="h-1.5 w-full bg-brand" />
             <nav className="flex h-16 w-full items-center justify-between gap-2 px-3 sm:h-20 sm:gap-4 sm:px-6 md:h-28 md:px-8">
                 <div className="flex min-w-0 flex-1 items-center gap-2 sm:gap-5">
