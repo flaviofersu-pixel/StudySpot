@@ -10,15 +10,14 @@ stages:
 build-job:
   stage: build
   script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
+    - npm install
+    - git push github main
+    - npm run build
 
 unit-test-job:
   stage: test
   script:
-    - echo "Running unit tests... This will take about 60 seconds."
-    - sleep 60
-    - echo "Code coverage is 90%"
+    - npm run test
 
 lint-test-job:
   stage: test
@@ -30,6 +29,11 @@ lint-test-job:
 deploy-job:
   stage: deploy
   environment: production
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
   script:
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
+    - cd Website/study-spot
+    - npm install --global vercel
+    - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - vercel build --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
